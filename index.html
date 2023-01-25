@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="./style.css"></link>
+    <title>Treemap Movie Sales</title>
+</head>
+<body>
+    <h1 id="title">🎬 Top Dog Movie Sales 🎥</h1>
+    <h4 id="description">Top 95 Highest Grossing Movies Grouped By Genre</h4>
+    <svg id="canvas">
+    </svg>
+
+<div class="flex-container">
+    <svg id='legend' class="flex-left">
+        <g>
+            <rect class='legend-item' x="10" y="0" width="30" height="30" style="fill:coral;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="60" y="20" fill="black">Action</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="10" y="40" width="30" height="30" style="fill:lightpink;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="60" y="60" fill="black">Drama</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="160" y="0" width="30" height="30" style="fill:lightgreen;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="210" y="20" fill="black">Adventure</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="160" y="40" width="30" height="30" style="fill:yellow;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="210" y="60" fill="black">Family</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="310" y="0" width="30" height="30" style="fill:khaki;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="360" y="20" fill="black">Animation</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="310" y="40" width="30" height="30" style="fill:cornflowerblue;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="360" y="60" fill="black">Comedy</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="460" y="0" width="30" height="30" style="fill:lavender;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+            <text x="510" y="20" fill="black">Biopgraphy</text>
+        </g>
+    </svg>
+
+    <div id="tooltip" class="flex-right"></div>
+
+</div>
+</body>
+    <script defer src="./script.js"></script>
+</html>
